@@ -2,10 +2,11 @@
   "name": "test_connection",
   "version": "1.0.0",
   "description": "This is for testing to connect nodejs and mongodb",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "test": "Connected"
   },
+  "type": "module",
   "keywords": [
     "test"
   ],

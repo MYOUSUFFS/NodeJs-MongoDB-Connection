@@ -1,9 +1,12 @@
-const express = require("express");
-const mongoose = require("mongoose");
+import express from 'express';
+import mongoose from 'mongoose';
+
+
+
 const app = express();
 
-// const url = "mongodb+srv://myousuffs1234:yousuff12@cluster0.1snfaa1.mongodb.net/?retryWrites=true&w=majority";
-const url = "mongodb://127.0.0.1:27017/testing_connection";
+const url = "mongodb+srv://myousuffs1234:yousuff12@cluster0.1snfaa1.mongodb.net/?retryWrites=true&w=majority";
+// const url = "mongodb://127.0.0.1:27017/testing_connection";
 
 const PORT = 3000;
 
@@ -29,3 +32,8 @@ mongoose
 //   });
 
 app.listen(PORT,()=>{console.log(PORT ,"port Running successfull")});
+
+app.post("/createUser",function(req,res){
+  var userName=req.body.userName;
+  obj[key]=req.body.userid;
+});
